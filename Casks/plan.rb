@@ -1,14 +1,14 @@
 cask "plan" do
-  version "0.1.5"
+  version "0.1.6"
 
   on_arm do
-    sha256 "c73ceb29a985a446b49fde57f26ad13eab570a6d1b657ee9a0d221a26440aba7"
+    sha256 "7238202465393f78f6d3a363cebf23a3b3c572faeb3ccb60e4b18b58c1c668e4"
 
     url "https://github.com/XabAyca/plan-releases/releases/download/v#{version}/plan-#{version}-aarch64-apple-darwin.dmg"
   end
 
   on_intel do
-    sha256 "e4a95bd236130b53c1812fb38cfce52da1b903c937dab1c28712195ffd0e3695"
+    sha256 "cc4bd04bbeecd61e994572e63a101083a273828440fca0b0a7c6cb2400a0314c"
 
     url "https://github.com/XabAyca/plan-releases/releases/download/v#{version}/plan-#{version}-x86_64-apple-darwin.dmg"
   end
