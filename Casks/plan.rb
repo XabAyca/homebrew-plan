@@ -19,6 +19,11 @@ cask "plan" do
 
   app "Plan.app"
 
+  postflight do
+    system_command "/usr/bin/xattr",
+                   args: ["-dr", "com.apple.quarantine", "#{appdir}/Plan.app"]
+  end
+
   zap trash: [
     "~/Library/Application Support/Plan",
     "~/Library/Preferences/com.mipise.plan.plist",
