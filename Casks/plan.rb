@@ -20,8 +20,7 @@ cask "plan" do
   app "Plan.app"
 
   postflight_steps do
-    system_command "/usr/bin/xattr",
-                   args: ["-dr", "com.apple.quarantine", "#{appdir}/Plan.app"]
+    run "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "Plan.app"], base: :appdir
   end
 
   zap trash: [
